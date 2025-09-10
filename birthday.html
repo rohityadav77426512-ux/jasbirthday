@@ -16,12 +16,18 @@
                   linear-gradient(180deg,#fff 0%,#fff3 100%);
       display:flex;align-items:center;justify-content:center;padding:12px;
     }
-    .card{
+   /* .card{
       width:100%;max-width:480px;
       background:var(--card);border-radius:18px;
       box-shadow:0 12px 30px rgba(0,0,0,0.12);
       overflow:hidden;
-    }
+    }*/
+    .card { width: 100%; max-width: 980px; margin: auto; }
+.gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 10px; }
+.photo img { width: 100%; height: auto; object-fit: cover; border-radius: 12px; }
+h1 { font-size: 6vw; } /* scales text on small screens */
+p { font-size: 4vw; }
+
     header{
       padding:24px 16px 12px;
       display:flex;flex-direction:column;align-items:center;text-align:center;
@@ -41,7 +47,7 @@
     button{background:var(--accent);color:white;border:0;padding:10px;border-radius:10px;font-weight:600;cursor:pointer;font-size:14px}
     main{padding:16px}
     main h2{margin:0 0 12px;font-size:18px;color:#333;text-align:center}
-    .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:10px}
+    /*.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:10px}*/
     .photo{background:#fafafa;border-radius:12px;overflow:hidden;position:relative;box-shadow:0 6px 18px rgba(0,0,0,0.06)}
     .photo img{width:100%;aspect-ratio:1/1;object-fit:cover;display:block}
     .caption{position:absolute;left:6px;bottom:6px;background:rgba(0,0,0,0.45);color:white;padding:4px 6px;border-radius:6px;font-size:12px}
